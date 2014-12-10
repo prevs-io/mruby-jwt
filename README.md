@@ -17,6 +17,7 @@ end
 
 ## Caveats
 
+- `JWT::HMAC.digest` only support SHA256 algorithm
 - this module is written in only mruby; not c implementation yet.
 
 ## License
