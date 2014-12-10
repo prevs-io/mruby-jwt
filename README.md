@@ -2,7 +2,7 @@
 
 A mruby implementation of [JSON Web Token draft 06](http://self-issued.info/docs/draft-jones-json-web-token-06.html).
 
-## install by mrbgems 
+## Install by mrbgems 
 
 - add conf.gem line to `build_config.rb` 
 
@@ -34,5 +34,12 @@ If the secret is wrong, it will raise a `JWT::DecodeError` telling you as such. 
 
 ## License
 
-under the MIT License:
+Under the MIT License:
 - see LICENSE file
+
+## Reference
+
+- [progrium/ruby-jwt](https://github.com/progrium/ruby-jwt)
+    - mruby-jwt is the modified version from `progium/ruby-jwt` for working in mruby environment.
+
+
