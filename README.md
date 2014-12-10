@@ -15,9 +15,21 @@ MRuby::Build.new do |conf|
 end
 ```
 
+## Usage
+
+    JWT.encode({"some" => "payload"}, "secret")
+
+Note the resulting JWT will not be encrypted, but verifiable with a secret key.
+
+    JWT.decode("someJWTstring", "secret")
+
+If the secret is wrong, it will raise a `JWT::DecodeError` telling you as such. You can still get at the payload by setting the verify argument to false.
+
+    JWT.decode("someJWTstring", nil, false)
+
 ## Caveats
 
-- `JWT::HMAC.digest` only support SHA256 algorithm
+- encryption only supports SHA256 algorithm
 - this module is written in only mruby; not c implementation yet.
 
 ## License
