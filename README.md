@@ -1,4 +1,4 @@
-# mruby-jwt
+# mruby-jwt [![Build Status](https://travis-ci.org/ainoya/mruby-jwt.svg)](https://travis-ci.org/ainoya/mruby-jwt)
 
 A mruby implementation of [JSON Web Token draft 06](http://self-issued.info/docs/draft-jones-json-web-token-06.html).
 
